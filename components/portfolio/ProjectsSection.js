@@ -1,5 +1,5 @@
 ﻿import Image from "next/image";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiFillGithub, AiOutlineArrowRight } from "react-icons/ai";
 import { profile, projects } from "../../data/portfolio";
 import SectionHeader from "./SectionHeader";
 
@@ -35,6 +35,30 @@ export default function ProjectsSection() {
                   </span>
                 ))}
               </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-4 py-2 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#0f766e] dark:bg-white dark:text-[#111827] dark:hover:bg-[#5eead4]"
+                  >
+                    View Project
+                    <AiOutlineArrowRight />
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-black/10 px-4 py-2 text-sm font-bold text-gray-700 transition hover:-translate-y-0.5 hover:border-[#0f766e] hover:text-[#0f766e] dark:border-white/10 dark:text-gray-200 dark:hover:text-[#5eead4]"
+                  >
+                    Code
+                    <AiFillGithub />
+                  </a>
+                )}
+              </div>
             </div>
           </article>
         ))}
@@ -42,3 +66,5 @@ export default function ProjectsSection() {
     </section>
   );
 }
+
+

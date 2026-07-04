@@ -109,22 +109,28 @@ export const stack = [
 
 export const projects = [
   {
-    title: "SaaS Dashboard",
-    type: "Admin experience",
+    title: "Dino HR",
+    type: "HR management platform",
     image: web1,
-    tags: ["Next.js", "Charts", "Responsive"],
+    liveUrl: "https://dino-hr.vercel.app/",
+    githubUrl: "https://github.com/RubayatHassan/dino-HR.git",
+    tags: ["Next.js", "HR", "Dashboard"],
   },
   {
-    title: "Commerce Platform",
-    type: "Product experience",
+    title: "DevIssues",
+    type: "Developer issue tracker",
     image: web2,
-    tags: ["React", "API", "Checkout"],
+    liveUrl: "https://react-devissues.vercel.app/",
+    githubUrl: "https://github.com/RubayatHassan/DevIssues-Frontend.git",
+    tags: ["React", "Issues", "Frontend"],
   },
   {
-    title: "Agency Website",
-    type: "Marketing site",
+    title: "Metro Time Fare",
+    type: "Transit time and fare app",
     image: web3,
-    tags: ["UI Design", "SEO", "Tailwind"],
+    liveUrl: "https://metro-time-fare.vercel.app/",
+    githubUrl: "https://github.com/RubayatHassan/Metro-time-fare.git",
+    tags: ["React", "Transit", "Fare Calculator"],
   },
   {
     title: "Learning Portal",
@@ -145,3 +151,9 @@ export const projects = [
     tags: ["Node.js", "Prisma", "PostgreSQL"],
   },
 ];
+
+
+
+
+
+

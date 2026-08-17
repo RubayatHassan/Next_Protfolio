@@ -1,26 +1,33 @@
 ﻿import { AiFillLinkedin } from "react-icons/ai";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaFacebook, FaGithub, FaNode, FaReact } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaGitAlt, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import {
   SiExpress,
+  SiDocker,
+  SiFirebase,
+  SiFramer,
+  SiGithub,
+  SiPostman,
   SiMongodb,
   SiMongoose,
+  SiNpm,
   SiNextdotjs,
   SiPrisma,
+  SiRedis,
   SiRedux,
   SiTailwindcss,
+  SiTypescript,
+  SiVercel,
 } from "react-icons/si";
 import profileImage from "../public/Rubayat1.png";
 import database from "../public/database.webp";
 import design from "../public/design.png";
 import deployment from "../public/deployment.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import rentnestPreview from "../public/rentnest.png";
+import dinoHrPreview from "../public/dino-hr.png";
+import devIssuesPreview from "../public/devissues.png";
+import metroTimeFarePreview from "../public/metro-time-fare.png";
 
 export const siteMeta = {
   title: "Quazi Rubayat Hassan | Full Stack Web Developer",
@@ -35,7 +42,7 @@ export const profile = {
   location: "Bangladesh",
   image: profileImage,
   resumeUrl:
-    "https://drive.google.com/file/d/15E_5XskbinYInXPuV8Ju4qP3ARuADDhq/view?usp=sharing",
+    "https://drive.google.com/file/d/1pRb7hzPA3WXhXirbOySEJbRxygEsEQay/view?usp=sharing",
   linkedinUrl:
     process.env.NEXT_PUBLIC_LINKEDIN_URL ||
     "https://www.linkedin.com/in/rubayat-hassan",
@@ -96,6 +103,7 @@ export const expertise = [
 export const stack = [
   { name: "React", icon: FaReact },
   { name: "Next.js", icon: SiNextdotjs },
+  { name: "TypeScript", icon: SiTypescript },
   { name: "Redux", icon: SiRedux },
   { name: "JavaScript", icon: IoLogoJavascript },
   { name: "Tailwind", icon: SiTailwindcss },
@@ -105,50 +113,55 @@ export const stack = [
   { name: "Mongoose", icon: SiMongoose },
   { name: "PostgreSQL", icon: BiLogoPostgresql },
   { name: "Prisma", icon: SiPrisma },
+  { name: "Redis", icon: SiRedis },
+  { name: "Git", icon: FaGitAlt },
+  { name: "GitHub", icon: SiGithub },
+  { name: "Firebase", icon: SiFirebase },
+  { name: "Vercel", icon: SiVercel },
+  { name: "Docker", icon: SiDocker },
+  { name: "Postman", icon: SiPostman },
+  { name: "Framer Motion", icon: SiFramer },
+  { name: "npm", icon: SiNpm },
 ];
 
 export const projects = [
   {
+    title: "RentNest",
+    type: "Rental property marketplace",
+    image: rentnestPreview,
+    liveUrl: "https://rent-nest-frontend-iota.vercel.app/",
+    frontendUrl: "https://rent-nest-frontend-iota.vercel.app/",
+    backendUrl: "https://rentnest-backend-rho.vercel.app/",
+    githubUrl: "https://github.com/RubayatHassan/Rent_Nest-Front-end",
+    backendGithubUrl: "https://github.com/RubayatHassan/Rent_Nest",
+    tags: ["Next.js", "Node.js", "Property Rental"],
+  },
+  {
     title: "Dino HR",
     type: "HR management platform",
-    image: web1,
+    image: dinoHrPreview,
     liveUrl: "https://dino-hr.vercel.app/",
+    frontendUrl: "https://dino-hr.vercel.app/",
     githubUrl: "https://github.com/RubayatHassan/dino-HR.git",
     tags: ["Next.js", "HR", "Dashboard"],
   },
   {
     title: "DevIssues",
     type: "Developer issue tracker",
-    image: web2,
+    image: devIssuesPreview,
     liveUrl: "https://react-devissues.vercel.app/",
+    frontendUrl: "https://react-devissues.vercel.app/",
     githubUrl: "https://github.com/RubayatHassan/DevIssues-Frontend.git",
     tags: ["React", "Issues", "Frontend"],
   },
   {
     title: "Metro Time Fare",
     type: "Transit time and fare app",
-    image: web3,
+    image: metroTimeFarePreview,
     liveUrl: "https://metro-time-fare.vercel.app/",
+    frontendUrl: "https://metro-time-fare.vercel.app/",
     githubUrl: "https://github.com/RubayatHassan/Metro-time-fare.git",
-    tags: ["React", "Transit", "Fare Calculator"],
-  },
-  {
-    title: "Learning Portal",
-    type: "Web app",
-    image: web4,
-    tags: ["MERN", "Auth", "MongoDB"],
-  },
-  {
-    title: "Portfolio System",
-    type: "Personal brand",
-    image: web5,
-    tags: ["Next.js", "CMS", "Design"],
-  },
-  {
-    title: "Operations Tool",
-    type: "Internal workflow",
-    image: web6,
-    tags: ["Node.js", "Prisma", "PostgreSQL"],
+    tags: ["Next.js", "Transit", "Fare Calculator"],
   },
 ];
 

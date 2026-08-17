@@ -4,10 +4,11 @@ import { profile } from "../../data/portfolio";
 
 export default function Navbar({ darkMode, onToggleDarkMode }) {
   return (
-    <nav className="sticky top-0 z-50 border-b border-black/5 bg-[#f7f4ee]/90 backdrop-blur dark:border-white/10 dark:bg-[#101314]/90">
+    <nav className="sticky top-0 z-50 border-b border-black/5 bg-[#f7f4ee]/75 backdrop-blur-xl dark:border-white/10 dark:bg-[#101314]/75">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
-        <a href="#home" className="font-burtons text-xl tracking-wide">
-          {profile.brand}
+        <a href="#home" className="flex items-center gap-2 font-burtons text-xl tracking-wide">
+          <span className="grid h-8 w-8 place-items-center rounded-xl bg-[#0f766e] text-sm text-white">R</span>
+          {profile.brand}<span className="text-[#0f766e] dark:text-[#5eead4]">.</span>
         </a>
         <div className="flex items-center gap-2 sm:gap-4">
           <a className="hidden text-sm font-medium text-gray-600 hover:text-[#0f766e] dark:text-gray-300 dark:hover:text-[#5eead4] sm:inline" href="#work">

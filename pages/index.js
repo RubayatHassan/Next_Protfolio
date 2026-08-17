@@ -6,6 +6,7 @@ import ExpertiseSection from "../components/portfolio/ExpertiseSection";
 import Footer from "../components/portfolio/Footer";
 import HeroSection from "../components/portfolio/HeroSection";
 import Navbar from "../components/portfolio/Navbar";
+import ProcessSection from "../components/portfolio/ProcessSection";
 import ProjectsSection from "../components/portfolio/ProjectsSection";
 import StackSection from "../components/portfolio/StackSection";
 import { siteMeta } from "../data/portfolio";
@@ -29,6 +30,7 @@ export default function Home() {
         <HeroSection />
         <StackSection />
         <ExpertiseSection />
+        <ProcessSection />
         <AboutSection />
         <ProjectsSection />
         <ContactSection />

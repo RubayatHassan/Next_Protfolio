@@ -4,7 +4,9 @@ import { profile } from "../../data/portfolio";
 export default function ContactSection() {
   return (
     <section id="contact" className="px-5 pb-10 md:px-8">
-      <div className="mx-auto max-w-6xl rounded-lg bg-[#0f766e] p-8 text-white shadow-2xl shadow-teal-900/20 md:p-12">
+      <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#0f766e] p-8 text-white shadow-2xl shadow-teal-900/20 md:p-14">
+        <div className="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full border-[28px] border-white/10" />
+        <div className="pointer-events-none absolute -bottom-28 left-1/3 h-72 w-72 rounded-full border-[32px] border-white/5" />
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#b9fff5]">Contact</p>

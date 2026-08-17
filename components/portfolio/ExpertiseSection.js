@@ -8,8 +8,10 @@ export default function ExpertiseSection() {
       <SectionHeader eyebrow="Expertise" title="End-to-end development for serious web products." />
       <div className="mt-10 grid gap-5 lg:grid-cols-3">
         {expertise.map((item) => (
-          <article key={item.title} className="rounded-lg border border-black/5 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10 dark:border-white/10 dark:bg-white/10">
-            <Image src={item.image} alt="" width={78} height={78} />
+          <article key={item.title} className="group rounded-3xl border border-black/5 bg-white/75 p-7 shadow-sm backdrop-blur transition duration-300 hover:-translate-y-2 hover:border-[#2a9d8f]/30 hover:shadow-xl hover:shadow-black/10 dark:border-white/10 dark:bg-white/10">
+            <div className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f4f1ea] dark:bg-white/10">
+              <Image src={item.image} alt="" width={64} height={64} className="transition duration-300 group-hover:scale-110" />
+            </div>
             <h3 className="mt-6 text-xl font-black text-[#111827] dark:text-white">{item.title}</h3>
             <p className="mt-3 leading-7 text-gray-600 dark:text-gray-300">{item.summary}</p>
             <div className="mt-5 flex flex-wrap gap-2">

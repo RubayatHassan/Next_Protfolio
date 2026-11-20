@@ -20,7 +20,6 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
-import profileImage from "../public/Rubayat1.png";
 import database from "../public/database.webp";
 import design from "../public/design.png";
 import deployment from "../public/deployment.png";
@@ -40,7 +39,7 @@ export const profile = {
   brand: "Rubayat",
   role: "Full Stack Web Developer",
   location: "Bangladesh",
-  image: profileImage,
+  image: "https://i.imgur.com/FvdMK9d.png",
   resumeUrl:
     "https://drive.google.com/file/d/1pRb7hzPA3WXhXirbOySEJbRxygEsEQay/view?usp=sharing",
   linkedinUrl:

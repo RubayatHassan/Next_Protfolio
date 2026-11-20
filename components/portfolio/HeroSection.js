@@ -50,7 +50,11 @@ export default function HeroSection() {
         <div className="absolute -right-6 bottom-8 h-36 w-36 rounded-lg bg-[#0f766e]/20 blur-2xl" />
         <div className="relative rounded-[2rem] border border-black/10 bg-white p-4 shadow-2xl shadow-black/10 dark:border-white/10 dark:bg-white/10">
           <div className="relative h-[430px] overflow-hidden rounded-[1.5rem] bg-gradient-to-b from-[#d7f3ed] to-[#f8e1d5] dark:from-[#123d39] dark:to-[#2b211e]">
-            <Image src={profile.image} alt={profile.name} layout="fill" objectFit="cover" priority />
+            <img
+              src={profile.image}
+              alt={profile.name}
+              className="absolute inset-0 h-full w-full object-contain object-top"
+            />
           </div>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-black/5 bg-[#f7f4ee] px-4 py-3 dark:border-white/10 dark:bg-white/[0.06]">
